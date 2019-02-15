@@ -95,4 +95,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    public void openTestList(View view) {
+        Intent testIntent = new Intent(this, TestActivity.class);
+        startActivity(testIntent);  // starts new activity on top of current activity
+    }
 }
